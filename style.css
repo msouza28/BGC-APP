@@ -493,16 +493,12 @@ display: grid;
     }
 
     .iframe{
-        width: 100%;
+        width: 85%;
     }
 
     .image img {
         margin-left: 10px;
     }
-
-    /* .map-container .map-style{
-        height: 50vh; 
-    } */
 }
 
 
