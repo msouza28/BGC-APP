@@ -169,7 +169,6 @@ header nav ul li a:hover{
     width: 100vw;
     max-height: 200px;
     filter: blur(1px) grayscale(1) brightness(90%);
-    
 }
 .image-como-chegar{
     width: 100vw;
@@ -190,6 +189,8 @@ header nav ul li a:hover{
     position: relative;
     display: inline-block;
     outline: none;
+    background-color: black;
+    padding-bottom: 10px;
 }
 
 .overlay-text {
@@ -210,7 +211,7 @@ header nav ul li a:hover{
 
 
 .container-cards {
-display: grid;
+     display: grid;
   grid-template-columns: repeat(2, 0.35fr);
   justify-items: center;
   justify-content: center;
@@ -313,12 +314,87 @@ display: grid;
 
 /* Fim Pagina Ingresso*/
 /*Line-Up*/
+
+
+.container-convidados {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: -9.5px;
+}
+
+.section-convidado{
+    position: relative;
+    margin-bottom: -60px;
+    transition: margin 0.2s linear;
+}
+
+.section-convidado:hover{
+    margin-bottom: -5px;
+}
+
+.section-convidado img{
+    width: 100vw;
+    height: 40vh;
+    object-fit: none;
+    filter: grayscale(0.6);
+}
+.section-convidado img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.descricao {
+    position: absolute;
+    top: 70%;
+    right: -20%; /* Posiciona a descrição à direita da tela */
+    width: 50%; /* Largura desejada para a descrição (ajuste conforme necessário) */
+    color: var(--black-color);
+    font-size: 50px;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+    text-shadow: 
+        -1px -1px 0 var(--green-color),  
+        1px -1px 0 var(--green-color),
+        -1px 1px 0 var(--green-color),
+        1px 1px 0 var(--green-color);
+        pointer-events: none;
+}
+
+
+.section-convidado:hover .descricao {
+    display: block; /* Exibe a descrição quando o mouse passa sobre a section-convidado */
+}
+
+
+
+#miyazaki {
+    object-position: 50% 22%;
+}
+
+#kojima {
+    object-position: 60% 32%;
+}
+
+#yoshida {
+    object-position: 85% 17%;
+}
+
+
 .image-line-up{
     width: 100vw;
     max-height: 300px;
-    filter: blur(1px) grayscale(1) brightness(90%)
+    filter: blur(1px) grayscale(1) brightness(90%);
+    object-fit: cover;
 }
+/*Fim Line-Up*/
 
+/*Inicio pagina explicacao*/
 .container-line-1{
     display: flex;
     flex-direction: row;
@@ -373,7 +449,7 @@ display: grid;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/*Fim Line-Up*/
+/*Fim pagina explicacao*/
 
 /* Como chegar*/
 
@@ -499,9 +575,45 @@ display: grid;
     header {
         padding: 0 30px;
     }
+    .section-convidado img{
+        width: -webkit-fill-available;
+    }
+    #miyazaki {
+        object-position: 40% 22%;
+    }
+    
+    #kojima {
+        object-position: 70% 32%;
+    }
+    
+    #yoshida {
+        object-position: 55% 17%;
+    }
+    .descricao{
+        font-size: 40px;
+        right: -20px;
+    }
 }
 
    @media only screen and (max-width: 768px) {
+    .section-convidado img{
+        width: -webkit-fill-available;
+    }
+    #miyazaki {
+        object-position: 40% 22%;
+    }
+    
+    #kojima {
+        object-position: 70% 32%;
+    }
+    
+    #yoshida {
+        object-position: 55% 17%;
+    }
+    .descricao{
+        font-size: 40px;
+        right: -20px;
+    }
     .mobile-nav {
         display: block;
     }

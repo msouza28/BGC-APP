@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line-Up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap"
@@ -44,72 +45,28 @@
 
     <main>
         <div class="image-wrapper">
-            <img class="image-line-up" src="../images/line-up-banner.jpg" alt="Evento">
+            <a href="descricao-convidado.html">
+            <img class="image-line-up" src="../images/banner-lineup.jpg" alt="Evento">
             <div class="overlay-text">Line-up</div>
+            </a>
         </div>
-
-        <div class="container-line-1">
-            <div class="esquerda">
-                <h1 class="text1-line">Hidetaka Miyazaki</h1>
-                <h3 class="text2-line">Presidente da From Software</h3>
-                <p class="text3-line">Criador de dark souls, demon souls, blood borne, elden ring,sekiro e armored core</p>
+        <div class="container-convidados">
+            <div class="section-convidado">
+                <img id="miyazaki" src="/images/miyazaki.jpg" alt="" onmouseover="mostrarDescricao('miyazaki')" onmouseout="ocultarDescricao('miyazaki')">
+                <div class="descricao">Hidetaka Miyazaki</div>
             </div>
-            <div class="image">
-                <img class="" alt="" src="../images/Myazaki_ds.jpeg">
+            <div class="section-convidado">
+                <a href="descricao-convidado.html">
+                <img id="kojima" src="/images/kojima.jpeg" alt="" onmouseover="mostrarDescricao('kojima')" onmouseout="ocultarDescricao('kojima')">
+                <div class="descricao">Hideo Kojima</div>
+                </a>
             </div>
-        </div>
-        <div class="text-embaixo">
-            <p>Miyazaki Hidetaka é um diretor de jogos eletrônicos japonês, projetista, escritor e executivo da
-                FromSoftware. Ele originalmente ingressou na empresa em 2004
-                como designer para a série Armored Core, antes de se tornar mais conhecido
-                por criar a série Souls.
-            </p>
-        </div>
-
-       
-        <div class="container-line-2">
-
-            <div class="image">
-                <img class="" src="../images/hideo_kojima.jpeg" alt="">
+            <div class="section-convidado">
+                <a href="descricao-convidado.html">
+                <img id="yoshida" src="/images/yoshida.jpg" alt="" onmouseover="mostrarDescricao('yoshida')" onmouseout="ocultarDescricao('yoshida')">
+                <div class="descricao">Naoki Yoshida</div>
+                </a>
             </div>
-
-            <div class="direita2">
-                <h1 class="text1-line">Hideo Kojima</h1>
-                <h3 class="text2-line">Ex vice-presidente da Konami</h3>
-                <p class="text3-line">Escreveu e dirigiu jogos da série Metal Gear Solid.
-                </p>
-            </div>
-        </div>
-        <div class="text-embaixo">
-            <p> A carreira de Hideo Kojima se confunde com a de Metal Gear Solid,
-                série em que se envolveu de todas as maneiras possíveis desde que
-                começou a trabalhar na Konami, em 1986. Hoje, o designer japonês de
-                51 anos é lembrado muito pelo caráter cinematográfico de seus jogos,
-                que fazem homenagens explícitas ao cinema, principalmente na edição das cenas
-                animadas é nelas, aliás, que suas características estéticas ficam mais evidentes.
-            </p>
-        </div>
-        <!--parte 2 acima-->
-        <div class="container-line-3">
-            <div class="esquerda3">
-                <h1 class="text1-line">Naoki Yoshida</h1>
-                <h3 class="text2-line">Diretor e projetista de jogos da Square Enix.</h3>
-                <p class="text3-line">Trabalhou em jogos, como: Dragon Quest X e Final Fantasy XIV: A Realm
-                    Reborn.</p>
-            </div>
-            <div class="image">
-                <img class="" src="../images/naoki_.jpeg" alt="">
-            </div>
-        </div>
-        <div class="text-embaixo">
-            <p> Também conhecido por seu apelido "Yoshi-P", é um produtor,
-                diretor e projetista de jogos eletrônicos
-                japonês que atualmente trabalha para a Square Enix.
-                Ele é mais conhecido por seus trabalhos em
-                massively multiplayer online role-playing games (MMORPGs),
-                como por exemplo Dragon Quest X e Final Fantasy XIV: A Realm Reborn.
-                Yoshida também é creditado por ter salvo o projeto Final Fantasy XIV de seu lançamento desastroso.
-            </p>
         </div>
     </main>
     <footer>
@@ -125,10 +82,10 @@
                 </div>
             </div>
             <div class="created-by">
-                <p>Criado por: Rafael Budoya</p>
+                <p>Criado por: Matheus Emiliano</p>
             </div>
     </footer>
-
+    <script src="/main.js"></script>
 </body>
 
 </html>
