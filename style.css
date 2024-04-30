@@ -343,7 +343,6 @@ header nav ul li a:hover{
 }
 .section-convidado img:hover{
     filter: grayscale(0);
-    cursor: pointer;
 }
 
 .descricao {
@@ -364,6 +363,22 @@ header nav ul li a:hover{
         -1px 1px 0 var(--green-color),
         1px 1px 0 var(--green-color);
         pointer-events: none;
+}
+.saiba-mais-lineup{
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-style: italic;
+    background-color: black;
+    
+} 
+.saiba-mais-lineup a{
+    text-decoration: none;
+    color: var(--green-color);
 }
 
 
@@ -392,6 +407,8 @@ header nav ul li a:hover{
     filter: blur(1px) grayscale(1) brightness(90%);
     object-fit: cover;
 }
+
+
 /*Fim Line-Up*/
 
 /*Inicio pagina explicacao*/
@@ -571,7 +588,7 @@ header nav ul li a:hover{
 
    /* responsividade */
 
-   @media only screen and (max-width: 900px) {
+   @media only screen and (max-width: 1024px) {
     header {
         padding: 0 30px;
     }
@@ -593,9 +610,15 @@ header nav ul li a:hover{
         font-size: 40px;
         right: -20px;
     }
+    .section-convidado{
+        margin-bottom: -150px;
+    }
 }
 
    @media only screen and (max-width: 768px) {
+    .section-convidado{
+        margin-bottom: -100px;
+    }
     .section-convidado img{
         width: -webkit-fill-available;
     }
@@ -699,6 +722,31 @@ header nav ul li a:hover{
         margin-left: 20px;
     }
 }
+
+@media only screen and (max-width: 540px) {
+    .overlay-text {
+        font-size: 22px;
+    }
+    #yoshida {
+        object-position: 47% 17%;
+    }
+    #kojima {
+        object-position: 73% 32%;
+    }
+    .section-convidado{
+        position: static;
+        margin-bottom: -10px;
+    }
+   .descricao {
+    position: static;
+    width: 100vw;
+    font-size: 30px;
+    background-color: var(--black-color);
+    margin-top: -10px;
+    color: var(--green-color);
+    text-shadow:none
+}
+}
 @media only screen and (max-width: 504px) {
     .overlay-text {
         font-size: 29px;
@@ -738,10 +786,30 @@ header nav ul li a:hover{
         margin-left: 20px;
     }
 }
-@media only screen and (max-width: 424px) {
+@media only screen and (max-width: 431px) {
     .overlay-text {
         font-size: 22px;
     }
+    #yoshida {
+        object-position: 47% 17%;
+    }
+    #kojima {
+        object-position: 73% 32%;
+    }
+    .section-convidado{
+        position: static;
+        margin-bottom: -10px;
+    }
+   .descricao {
+    position: static;
+    width: 100vw;
+    font-size: 30px;
+    background-color: var(--black-color);
+    margin-top: -10px;
+    color: var(--green-color);
+    text-shadow:none
+}
+    
 }
 @media only screen and (max-width: 384px) {
     .overlay-text {
